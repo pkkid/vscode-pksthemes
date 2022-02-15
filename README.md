@@ -10,3 +10,8 @@ This extension can be installed through the extensions sidebar by searching for
 "pkkid-themes" or by running `ext install pks-themes` from quick Open (⌘+P).
 
 ![Python Example](https://raw.githubusercontent.com/pkkid/pks-themes-vscode/master/images/screenshot.png)
+
+## Credits
+Special thank to Pavel Pertsev, the creator of gruvbox original theme.
+Also thanks to jdinhify for the VSCode editor theme colors.
+
