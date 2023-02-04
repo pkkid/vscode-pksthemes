@@ -4,9 +4,8 @@
   "description": "PKs themes for Visual Studio Code.",
   "version": "1.2.0",
   "publisher": "pkkid",
-  "engines": {
-    "vscode": "^1.11.0"
-  },
+  "repository": "https://github.com/pkkid/pks-themes-vscode",
+  "engines": {"vscode": "^1.11.0"},
   "categories": ["Themes"],
   "icon": "images/icon.png",
   "contributes": {
