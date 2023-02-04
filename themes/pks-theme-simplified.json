@@ -40,7 +40,12 @@
     "keybindingLabel.foreground": "#ebdbb2",
     "keybindingLabel.border": "#22222288",
     "keybindingLabel.bottomBorder": "#22222288",
-    // SIDE BAR
+    // TABS
+    "tab.activeBackground": "#32302f",
+    "tab.activeForeground": "#ebdbb2",
+    "tab.inactiveBackground": "#252526",
+    "tab.inactiveForeground": "#a89984",
+    // SIDEBAR
     "sideBar.foreground": "#C2B18E",
     "sideBarSectionHeader.background": "#333",
     "sideBarTitle.foreground": "#dbcba2",
@@ -50,13 +55,20 @@
     "activityBar.foreground": "#ebdbb2",
     "activityBarBadge.background": "#458588",
     "activityBarBadge.foreground": "#ebdbb2",
-    // TABS
-    "tab.activeBackground": "#32302f",
-    "tab.activeForeground": "#ebdbb2",
-    "tab.inactiveBackground": "#252526",
-    "tab.inactiveForeground": "#a89984",
+    // STATUS BAR
+    "statusBar.background": "#252526",
+    "statusBar.border": "#33333300",
+    "statusBar.debuggingBackground": "#fe8019",
+    "statusBar.debuggingBorder": "#1d202100",
+    "statusBar.debuggingForeground": "#1d2021",
+    "statusBar.foreground": "#ebdbb2bb",
+    "statusBar.noFolderBackground": "#1d2021",
+    "statusBar.noFolderBorder": "#1d202100",
+    // BADGE
+    "badge.background": "#d3869b",
+    "badge.foreground": "#1d2021",
     // EDITOR
-    "editor.background": "#252526",
+    "editor.background": "#151516",
     "editor.findMatchBackground": "#83a59870",
     "editor.findMatchHighlightBackground": "#fe801930",
     "editor.findRangeHighlightBackground": "#83a59870",
@@ -79,15 +91,6 @@
     "diffEditor.removedTextBackground": "#fb493400",
     "diffEditor.insertedLineBackground": "#b8bb2630",
     "diffEditor.removedLineBackground": "#fb493430",
-    // STATUS BAR
-    "statusBar.background": "#333333",
-    "statusBar.border": "#333333",
-    "statusBar.debuggingBackground": "#fe8019",
-    "statusBar.debuggingBorder": "#1d202100",
-    "statusBar.debuggingForeground": "#1d2021",
-    "statusBar.foreground": "#ebdbb2",
-    "statusBar.noFolderBackground": "#1d2021",
-    "statusBar.noFolderBorder": "#1d202100",
     // INTEGRATED TERMINAL
     "terminal.ansiBlack": "#3c3836",
     "terminal.ansiBrightBlack": "#928374",
