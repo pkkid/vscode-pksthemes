@@ -8,6 +8,8 @@
     // BASE COLORS
     "focusBorder": "#3c383600",
     "foreground": "#ebdbb2bb",
+    "textLink.activeForeground": "#ebdbb2",
+    "textLink.foreground": "#ebdbb2",
     // BREADCRUMB
     "breadcrumb.foreground": "#ebdbb244",
     "breadcrumb.focusForeground": "#ebdbb2aa",
