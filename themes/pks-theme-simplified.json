@@ -46,9 +46,9 @@
     "tab.inactiveBackground": "#252526",
     "tab.inactiveForeground": "#a89984",
     // SIDEBAR
-    "sideBar.foreground": "#C2B18E",
+    "sideBar.foreground": "#D6C8ABCC",
     "sideBarSectionHeader.background": "#333",
-    "sideBarTitle.foreground": "#dbcba2",
+    "sideBarTitle.foreground": "#D6C8AB",
     "sideBar.border": "#11111155",
     // ACTIVITY BAR
     "activityBar.background": "#252526",
