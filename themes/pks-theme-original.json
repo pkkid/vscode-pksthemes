@@ -1,6 +1,6 @@
 // PKs Theme - Borrowed editor colors from Gruvbox theme
 // Build syntax colors myself.
-// Build package with: vsce package
+// Build package with `vsce package`
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
