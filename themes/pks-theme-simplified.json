@@ -46,7 +46,7 @@
     "tab.inactiveBackground": "#252526",
     "tab.inactiveForeground": "#a89984",
     // SIDEBAR
-    "sideBar.foreground": "#C2B18E",
+    "sideBar.foreground": "#c2b18e",
     "sideBarSectionHeader.background": "#333",
     "sideBarTitle.foreground": "#dbcba2",
     "sideBar.border": "#11111155",
@@ -151,6 +151,8 @@
         "variable.other.less",
         "variable.scss",
         "variable",
+        "text.html",
+        "text.xml",
       ],
     },{
       "name": "Pink",
@@ -170,6 +172,7 @@
         "source.python punctuation.definition.arguments",
         "source.python punctuation.definition.dictionary",
         "entity.other.attribute-name.html",
+        "entity.other.attribute-name.localname.xml",
       ],
     },{
       "name": "Peach",
@@ -227,8 +230,6 @@
         "string.regexp",
         "text.html.django storage.type.attr",
         "text.html.django storage.type.templatetag",
-        "text.html",
-        "text.xml",
       ],
     },{
       "name": "Grey (darker)",
