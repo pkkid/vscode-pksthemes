@@ -1,6 +1,6 @@
 // PKs Theme - Borrowed editor colors from Gruvbox theme
 // Build syntax colors myself.
-// Build package with: vsce package
+// Build package with `vsce package`
 {
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
@@ -46,9 +46,9 @@
     "tab.inactiveBackground": "#252526",
     "tab.inactiveForeground": "#a89984",
     // SIDEBAR
-    "sideBar.foreground": "#c2b18e",
+    "sideBar.foreground": "#D6C8ABDD",
     "sideBarSectionHeader.background": "#333",
-    "sideBarTitle.foreground": "#dbcba2",
+    "sideBarTitle.foreground": "#D6C8AB",
     "sideBar.border": "#11111155",
     // ACTIVITY BAR
     "activityBar.background": "#252526",
