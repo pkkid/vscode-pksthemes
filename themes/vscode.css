@@ -152,12 +152,12 @@ body:has(footer div[aria-label^='pytest-automation']) a.window-appicon { backgro
 /*----------------------------------
  * Status Bar (footer)
  *-------------------------------- */
-/* footer.statusbar {
+footer.statusbar {
   > .items-container {
-    opacity: 0;
+    opacity: 0.6;
     transition: var(--transition);
   }
   &:hover > .items-container {
     opacity: 1;
   }
-} */
+}
