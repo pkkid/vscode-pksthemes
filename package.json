@@ -2,7 +2,7 @@
   "name": "pks-themes",
   "displayName": "PKs Themes",
   "description": "PKs themes for Visual Studio Code.",
-  "version": "1.2.0",
+  "version": "2025.01.03",
   "publisher": "pkkid",
   "repository": "https://github.com/pkkid/pks-themes-vscode",
   "engines": {"vscode": "^1.11.0"},
@@ -10,13 +10,17 @@
   "icon": "images/icon.png",
   "contributes": {
     "themes": [{
-      "label": "PKs Theme Original",
+      "label": "PKs Theme v1",
       "uiTheme": "vs-dark",
-      "path": "./themes/pks-theme-original.json"
+      "path": "./themes/pks-theme-v1.json"
     },{
-      "label": "PKs Theme Simplified",
+      "label": "PKs Theme v2",
       "uiTheme": "vs-dark",
-      "path": "./themes/pks-theme-simplified.json"
+      "path": "./themes/pks-theme-v2.json"
+    },{
+      "label": "PKs Theme v3",
+      "uiTheme": "vs-dark",
+      "path": "./themes/pks-theme-v3.json"
     }]
   }
 }
