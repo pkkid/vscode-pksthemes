@@ -1,0 +1,1 @@
+ln -s ~/Projects/vscode-pksthemes ~/.vscode/extensions/vscode-pksthemes
