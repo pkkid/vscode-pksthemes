@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
         var appicon = document.querySelector('a.window-appicon')
         titlediv = document.createElement('div')
         titlediv.id = 'window-title'
-        appicon.parentNode.insertBefore(titlediv, appicon.nextSibling);
+        appicon.parentNode.insertBefore(titlediv, appicon.nextSibling)
+        appicon.setAttribute('data-project', newtitle)
       }
-      titlediv.textContent = newtitle;
+      titlediv.textContent = newtitle
       title = newtitle
       console.log(`[PK] ${title}`)
     }

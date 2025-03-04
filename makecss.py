@@ -5,7 +5,7 @@ import subprocess
 from os.path import dirname, abspath
 
 ROOT = f"{dirname(abspath(__file__))}/favicons"
-CSS = "body:has(footer div[aria-label^='{basename}']) a.window-appicon { background-image: url('data:image/gif;base64,{data}') !important; }"  # noqa
+CSS = "a.window-appicon[data-project^='{basename}'] { background-image: url('data:image/gif;base64,{data}') !important; }"  # noqa
 text = ""
 for root, dirs, files in os.walk(ROOT):
     for file in files:
