@@ -2,5 +2,5 @@
 sudo chown -R $(whoami) "$(which code)"
 sudo chown -R $(whoami) /usr/share/code
 if [ ! -L ~/.vscode/extensions/vscode-pksthemes ]; then
-  ln -s ~/Projects/vscode-pksthemes ~/.vscode/extensions/vscode-pksthemes
+  ln -s ~/Projects/vscode-pksthemes ~/.vscode/extensions/
 fi
