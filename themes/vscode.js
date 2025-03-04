@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'ransomware': 'mdi-skull-scan-outline',
     'report': 'mdi-clipboard-text-outline',
     'unity': 'mdi-alpha-n-box',
-    'vscode-pksthemes': 'mdi-palette-swatch-outline',
+    'vscode-pkstheme': 'mdi-palette-swatch-outline',
   }
 
   // Inject the Material Design Icons
