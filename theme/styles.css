@@ -85,7 +85,7 @@ div.title-label h2 { font-weight:bold !important; }
 /*----------------------------------
  * File Tabs
  *-------------------------------- */
- .tabs-and-actions-container .tabs-container > .tab {
+.tabs-and-actions-container .tabs-container > .tab {
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;
 }

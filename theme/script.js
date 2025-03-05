@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'django-searchquery': 'mdi-database-search-outline',
     'ntlie': 'mdi-flask-outline',
     'pipeline-dashboard': 'mdi-pipe',
-    'pushingkarma': 'world',
+    'pushingkarma': 'mdi-earth',
     'pytest-automation': 'mdi-flask-outline',
     'python-algorithmx': 'mdi-puzzle-outline',
     'python-plexapi': 'mdi-plex',
@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
   link.href = 'https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css'
   document.head.appendChild(link)
   
-  // Update the Window Title and icon
+  
   setInterval(function() {
+    // Update the Window Title and icon
     var titleparts = document.title.split(' - ')
     var newtitle = titleparts[titleparts.length - 2]
     if (newtitle !== title) {
@@ -48,6 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
       titlediv.textContent = newtitle
       title = newtitle
     }
+
+    // Update SidePanel Tabs
+    
+
+
   }, 1000)
 
+  
 })
