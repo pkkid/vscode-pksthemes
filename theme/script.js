@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var title = null
   var titlediv = null
+  var appicon = null
   
   // Project Icons
   // https://pictogrammers.com/library/mdi/
@@ -26,14 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
   link.href = 'https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css'
   document.head.appendChild(link)
   
-  
   setInterval(function() {
     // Update the Window Title and icon
     var titleparts = document.title.split(' - ')
     var newtitle = titleparts[titleparts.length - 2]
     if (newtitle !== title) {
       if (titlediv === null) {
-        var appicon = document.querySelector('a.window-appicon')
+        appicon = document.querySelector('a.window-appicon')
         titlediv = document.createElement('div')
         titlediv.classList.add('window-title')
         appicon.parentNode.insertBefore(titlediv, appicon.nextSibling)
@@ -49,12 +49,5 @@ document.addEventListener('DOMContentLoaded', function() {
       titlediv.textContent = newtitle
       title = newtitle
     }
-
-    // Update SidePanel Tabs
-    
-
-
   }, 1000)
-
-  
 })
