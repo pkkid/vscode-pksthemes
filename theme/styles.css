@@ -150,6 +150,7 @@ div.title-label h2 { font-weight:bold !important; }
     &[aria-label^="Bookmarks"]::before { content: "\F00C0" !important; }
     &[aria-label^="Chat"]::before { content: "\F0B79" !important; }
     &[aria-label^="Copilot Edits"]::before { content: "\F1A7C" !important; }
+    &[aria-label^="DBCode"]::before { content: "\F01BC" !important; }
     &[aria-label^="Debug"]::before { content: "\F00E4" !important; }
     &[aria-label^="Explorer"]::before { content: "\F06B8" !important; }
     &[aria-label^="Extensions"]::before { content: "\F0431" !important; }
