@@ -142,8 +142,11 @@ div.title-label h2 { font-weight:bold !important; }
       position: relative;
       position: relative;
       text-rendering: auto;
+      opacity: 0.6;
       top: 7.5px;
+      transition: opacity 0.3s;
     }
+    &:hover::before { opacity: 1; }
     &[aria-label^="Bookmarks"]::before { content: "\F00C0" !important; }
     &[aria-label^="Chat"]::before { content: "\F0B79" !important; }
     &[aria-label^="Copilot Edits"]::before { content: "\F1A7C" !important; }
@@ -160,6 +163,7 @@ div.title-label h2 { font-weight:bold !important; }
     &[aria-label^="Source Control"]::before { content: "\F062C" !important; }
     &[aria-label^="Terminal"]::before { content: "\F018D" !important; }
   }
+  .action-item[aria-selected=true] .action-label::before { opacity: 1; }
   .action-item[aria-selected=true] .active-item-indicator::before {
     background-color: var(--accent) !important;
     border-radius: 2px !important;
