@@ -32,7 +32,6 @@ a.window-appicon {
   &::before { font-size:18px; color:var(--accent); }
 }
 
-
 /*----------------------------------
  * Font and Color Tweaks
  *-------------------------------- */
@@ -62,52 +61,30 @@ div.title-label h2 { font-weight:bold !important; }
   margin-bottom: 16px !important;
   padding: 8px !important;
 }
-/* Command palette placeholder text */
-.monaco-inputbox input::placeholder {
-  color: #fff1 !important;
-}
-/* Actions Container */
-.titlebar-center .actions-container {
-  display: none !important;
-}
-/* Some weird bubble that keeps popping up */
-.context-view.monaco-component.top.left {
-  display: none !important;
-}
-/* Darken main window when command palette is open */
-.monaco-grid-view {
-  transition: filter 0.2s;
-}
+
+.titlebar-center .actions-container { display: none !important; }  /* Actions Container */
+.context-view.monaco-component.top.left { display: none !important; }  /* Some weird bubble that keeps popping up */
+.monaco-inputbox input::placeholder { color: #fff1 !important; } /* Command palette placeholder text */
+.monaco-grid-view { transition: filter 0.2s; }  /* Darken main window when command palette is open */
 .monaco-workbench:has(> .quick-input-widget):not(:has(> .quick-input-widget[style*="display: none"])) {
-  .monaco-grid-view {
-    filter: brightness(80%) !important;
-  }
+  .monaco-grid-view { filter: brightness(80%) !important; }
 }
 
 /*----------------------------------
  * File Tabs
  *-------------------------------- */
+.sidebar.left { border-right: 1px solid #0000 !important; }
+.basepanel.right { border-left: 1px solid #0000 !important; }
 .tabs-and-actions-container .tabs-container > .tab {
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;
-}
-.sidebar.left {
-  border-right: 1px solid #0000 !important;
-}
-.basepanel.right {
-  border-left: 1px solid #0000 !important;
 }
 
 /*----------------------------------
  * Editor (rounded corners)
  *-------------------------------- */
-.monaco-breadcrumbs {
-  border-top-right-radius: 8px;
-}
-.editor .content {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
+.monaco-breadcrumbs { border-top-right-radius: 8px; }
+.editor .content { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
 /*----------------------------------
  * Scrollbar
@@ -186,7 +163,6 @@ div.title-label h2 { font-weight:bold !important; }
   &:hover { opacity:1; }
 }
 
-
 /*----------------------------------
  * Pane Headers
  *-------------------------------- */
@@ -198,11 +174,6 @@ div.title-label h2 { font-weight:bold !important; }
  * Status Bar (footer)
  *-------------------------------- */
 footer.statusbar {
-  > .items-container {
-    opacity: 0.6;
-    transition: var(--transition);
-  }
-  &:hover > .items-container {
-    opacity: 1;
-  }
+  > .items-container { opacity: 0.6; transition: var(--transition); }
+  &:hover > .items-container { opacity: 1; }
 }
