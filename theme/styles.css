@@ -61,13 +61,18 @@ div.title-label h2 { font-weight:bold !important; }
   margin-bottom: 16px !important;
   padding: 8px !important;
 }
+.quick-input-titlebar {
+  background-color: transparent !important;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
 
 .titlebar-center .actions-container { display: none !important; }  /* Actions Container */
 .context-view.monaco-component.top.left { display: none !important; }  /* Some weird bubble that keeps popping up */
 .monaco-inputbox input::placeholder { color: #fff1 !important; } /* Command palette placeholder text */
 .monaco-grid-view { transition: filter 0.2s; }  /* Darken main window when command palette is open */
 .monaco-workbench:has(> .quick-input-widget):not(:has(> .quick-input-widget[style*="display: none"])) {
-  .monaco-grid-view { filter: brightness(80%) !important; }
+  .monaco-grid-view { filter: brightness(75%) !important; }
 }
 
 /*----------------------------------
