@@ -40,6 +40,7 @@ div.title-label h2 { font-weight:bold !important; }
 .codicon { color:var(--accent) !important; } 
 .codicon.outline-element-icon { display:none; }
 .codicon.codicon-breadcrumb-separator { color:#333 !important; }
+.codicon.codicon-remote { color:#ebdbb2 !important; }
 
 /*----------------------------------
  * Quick Command Palette
