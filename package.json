@@ -1,18 +1,19 @@
 {
-  "name": "pkstheme",
-  "displayName": "PKs Theme",
-  "description": "PKs theme for VSCode.",
+  "name": "pksthemes",
+  "displayName": "PKsThemes",
+  "description": "PKsThemes for VSCode",
   "version": "2025.1.5",
   "publisher": "pkkid",
   "repository": "https://github.com/pkkid/vscode-pkstheme",
   "engines": {"vscode": "^1.11.0"},
   "categories": ["Themes"],
   "icon": "img/icon.png",
+  "dependencies": {"json5": "^2.2.3"},
   "contributes": {
     "themes": [{
-      "label": "PKs Theme",
+      "label": "PKsTheme  RIT",
       "uiTheme": "vs-dark",
-      "path": "./theme/theme.json"
+      "path": "./themes/theme-rit.json"
     }]
   }
 }
