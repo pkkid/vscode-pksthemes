@@ -11,9 +11,25 @@
   "dependencies": {"json5": "^2.2.3"},
   "contributes": {
     "themes": [{
-      "label": "PKsTheme  RIT",
-      "uiTheme": "vs-dark",
-      "path": "./themes/theme-rit.json"
+      "label": "PKsTheme RIT",
+      "path": "./themes/theme-rit.json",
+      "uiTheme": "vs-dark"
+    },{
+      "label": "PKsTheme Dracula",
+      "path": "./themes/theme-dracula.json",
+      "uiTheme": "vs-dark"
+    },{
+      "label": "PKsTheme Gruvbox",
+      "path": "./themes/theme-gruvbox.json",
+      "uiTheme": "vs-dark"
+    },{
+      "label": "PKsTheme Monokai",
+      "path": "./themes/theme-monokai.json",
+      "uiTheme": "vs-dark"
+    },{
+      "label": "PKsTheme OneDark Pro",
+      "path": "./themes/theme-onedarkpro.json",
+      "uiTheme": "vs-dark"
     }]
   }
 }

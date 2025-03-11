@@ -13,6 +13,7 @@ if (require.main === module) {
       const syntax = JSON5.parse(fs.readFileSync(path.join('src', filename), 'utf8'))
       const theme = { ...window, ...syntax }
       const themename = filename.replace('syntax-', 'theme-')
+      console.log(`Saving themes/${themename}`)
       fs.writeFileSync(`themes/${themename}`, JSON.stringify(theme, null, 2))
     }
   });
