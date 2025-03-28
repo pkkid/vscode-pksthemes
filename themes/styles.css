@@ -17,8 +17,25 @@
   --titlecolor: transparent;
   --accent: #90846b;
 }
-.linux { font-family:"Liberation Sans" !important; font-weight:300; }
-.interactive-session .view-lines { font-size:12px !important; }
+.linux { font-family:"Liberation Sans" !important; font-weight:400; }
+
+
+/*----------------------------------
+ * Cleaner Copilot UI
+ *-------------------------------- */
+.interactive-session .view-lines {
+  font-size: 12px !important;
+}
+.interactive-request {
+  background-color: #fff1;
+  font-size: 1.1em;
+  margin: 0px 10px;
+  border-radius: 6px;
+  .header { display: none; }
+}
+.interactive-response {
+  .header { display: none; }
+}
 
 /*----------------------------------
  * My Personal Projects
@@ -143,21 +160,21 @@ div.title-label h2 { font-weight:bold !important; }
       top: 0px !important;
       transition: opacity 0.2s;
     }
-    &[aria-label^='Bookmarks']::before { content: '\F00C0' !important; }
-    &[aria-label^='Chat']::before { content: '\F1719' !important; }
-    &[aria-label^='Copilot Edits']::before { content: '\F1A7C' !important; }
+    &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
+    &[aria-label^='Chat']::before { content: '\F171A' !important; }
+    &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
     &[aria-label^='DBCode']::before { content: '\F01BC' !important; }
-    &[aria-label^='Debug']::before { content: '\F00E4' !important; }
-    &[aria-label^='Explorer']::before { content: '\F06B8' !important; }
-    &[aria-label^='Extensions']::before { content: '\F0431' !important; }
-    &[aria-label^='Output']::before { content: '\F0BB0' !important; }
-    &[aria-label^='Ports']::before { content: '\F06F3' !important; }
+    &[aria-label^='Debug']::before { content: '\F0A30' !important; }
+    &[aria-label^='Explorer']::before { content: '\F1518' !important; }
+    &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
+    &[aria-label^='Output']::before { content: '\F1009' !important; }
+    &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
     &[aria-label^='Problems']::before { content: '\F0027' !important; }
-    &[aria-label^='Project Manager']::before { content: '\F024B' !important; }
+    &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
     &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
-    &[aria-label^='Run and Debug']::before { content: '\F040C' !important; }
+    &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
     &[aria-label^='Search']::before { content: '\F0349' !important; }
-    &[aria-label^='Source Control']::before { content: '\F062C' !important; }
+    &[aria-label^='Source Control']::before { content: '\F0169' !important; }
     &[aria-label^='Terminal']::before { content: '\F018D' !important; }
   }
   .action-item[aria-selected=true] .action-label::before { opacity: 1; }
