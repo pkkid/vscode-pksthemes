@@ -163,7 +163,7 @@ div.title-label h2 { font-weight:bold !important; }
     &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
     &[aria-label^='Chat']::before { content: '\F171A' !important; }
     &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
-    &[aria-label^='DBCode']::before { content: '\F01BC' !important; }
+    &[aria-label^='DBCode']::before { content: '\F1632' !important; }
     &[aria-label^='Debug']::before { content: '\F0A30' !important; }
     &[aria-label^='Explorer']::before { content: '\F1518' !important; }
     &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
