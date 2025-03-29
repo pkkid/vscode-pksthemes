@@ -169,13 +169,16 @@ div.title-label h2 { font-weight:bold !important; }
     &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
     &[aria-label^='Output']::before { content: '\F1009' !important; }
     &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
-    &[aria-label^='Problems']::before { content: '\F0027' !important; }
+    &[aria-label^='Problems']::before { content: '\F0CE4' !important; }
     &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
     &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
     &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
     &[aria-label^='Search']::before { content: '\F0349' !important; }
     &[aria-label^='Source Control']::before { content: '\F0169' !important; }
+    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
     &[aria-label^='Terminal']::before { content: '\F018D' !important; }
+    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
+    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
   }
   .action-item[aria-selected=true] .action-label::before { opacity: 1; }
   .action-item[aria-selected=true] .active-item-indicator::before {
