@@ -1,0 +1,219 @@
+/*----------------------------------
+ * Custom CSS Styles
+ * Derivative from https://github.com/glennraya
+ * https://github.com/glennraya/vscode-settings-json/blob/main/custom-vscode.css
+ *
+ * Installation:
+ * 1. Add the extension "Custom CSS and JS Loader" to VS Code
+ * 2. Add the following to your settings.json:
+ *    "vscode_custom_css.imports": ["file://path/to/vscode.css"]
+ * 3. Allow Custom CSS and JS to modifiy installation:
+ *    sudo chown -R $(whoami) "$(which code)"
+ *    sudo chown -R $(whoami) /usr/share/code
+ * 4. Reload Custom CSS and JS
+ *--------------------------------- */
+:root {
+  --transition: opacity 0.3s !important;
+  --titlecolor: transparent;
+  --accent: #90846b;
+}
+.linux { font-family:"Liberation Sans" !important; font-weight:400; }
+
+
+/*----------------------------------
+ * Cleaner Copilot UI
+ *-------------------------------- */
+.interactive-session .view-lines {
+  font-size: 12px !important;
+}
+.interactive-request {
+  background-color: #fff1;
+  font-size: 1.1em;
+  margin: 0px 10px;
+  border-radius: 6px;
+  .header { display: none; }
+}
+.interactive-response {
+  .header { display: none; }
+}
+
+/*----------------------------------
+ * My Personal Projects
+ * Update application icon for my personal projects
+ *-------------------------------- */
+a.window-appicon {
+  background-image: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before { font-size:18px; color:var(--accent); }
+}
+
+/*----------------------------------
+ * Font and Color Tweaks
+ *-------------------------------- */
+div.window-title { order:2; font-weight:bold; color:var(--accent); }
+div.title-label h2 { font-weight:bold !important; }
+.codicon { color:var(--accent) !important; } 
+.codicon.outline-element-icon { display:none; }
+.codicon.codicon-breadcrumb-separator { color:#333 !important; }
+.codicon.codicon-remote { color:#ebdbb2 !important; }
+
+/*----------------------------------
+ * Quick Command Palette
+ *-------------------------------- */
+.quick-input-widget {
+  border-radius: 10px !important;
+  box-shadow: 0px 8px 20px #0007 !important;
+  padding: 10px 10px 18px 10px !important;
+}
+/* Command palette input box */
+.quick-input-filter .monaco-inputbox {
+  background-color: #151516 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  font-family: "Liberation Mono" !important;
+  font-size: 16px !important;
+  margin-bottom: 16px !important;
+  padding: 8px !important;
+}
+.quick-input-titlebar {
+  background-color: transparent !important;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+/* Actions Container */
+.titlebar-center .actions-container { display: none !important; }
+/* Some weird bubble that keeps popping up */
+.context-view.monaco-component.top.left { display: none !important; }
+/* Command palette placeholder text */
+.monaco-inputbox input::placeholder { color: #fff1 !important; }
+/* Darken main window when command palette is open */
+.monaco-grid-view { transition: filter 0.2s; }  
+.monaco-workbench:has(> .quick-input-widget):not(:has(> .quick-input-widget[style*="display: none"])) {
+  .monaco-grid-view { filter: brightness(75%) !important; }
+}
+
+/*----------------------------------
+ * File Tabs
+ *-------------------------------- */
+.sidebar.left { border-right: 1px solid #0000 !important; }
+.basepanel.right { border-left: 1px solid #0000 !important; }
+.tabs-and-actions-container .tabs-container > .tab {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+/*----------------------------------
+ * Editor (rounded corners)
+ *-------------------------------- */
+.monaco-breadcrumbs { border-top-right-radius: 8px; }
+.editor .content { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+
+/*----------------------------------
+ * Scrollbar
+ *-------------------------------- */
+.decorationsOverviewRuler,
+.xterm-decoration-overview-ruler {
+  width: 7px !important;
+  opacity: 0.5;
+}
+.slider {
+  position: absolute !important;
+  right: 1px !important;
+  width: 5px !important;
+  border-radius: 3px;
+  left: auto !important;
+}
+
+/*----------------------------------
+ * Composite Header Custom Icons
+ *-------------------------------- */
+.composite.header {
+  .action-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px !important;
+    &:hover .action-label::before { opacity: 1; }
+  }
+  .action-label {
+    mask-image: none !important;
+    mask-mode: none !important;
+    background-color: transparent !important;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+      color: var(--accent) !important;
+      content: '\F024B' !important;
+      display: block;
+      font: normal normal normal 18px/1 'Material Design Icons' !important;
+      left: 0px !important;
+      line-height: 18px;
+      margin: 0px;
+      opacity: 0.5;
+      position: absolute;
+      text-rendering: auto;
+      top: 0px !important;
+      transition: opacity 0.2s;
+    }
+    &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
+    &[aria-label^='Chat']::before { content: '\F171A' !important; }
+    &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
+    &[aria-label^='DBCode']::before { content: '\F1632' !important; }
+    &[aria-label^='Debug']::before { content: '\F0A30' !important; }
+    &[aria-label^='Explorer']::before { content: '\F1518' !important; }
+    &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
+    &[aria-label^='Output']::before { content: '\F1009' !important; }
+    &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
+    &[aria-label^='Problems']::before { content: '\F0CE4' !important; }
+    &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
+    &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
+    &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
+    &[aria-label^='Search']::before { content: '\F0349' !important; }
+    &[aria-label^='Source Control']::before { content: '\F0169' !important; }
+    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
+    &[aria-label^='Terminal']::before { content: '\F018D' !important; }
+    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
+    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
+  }
+  .action-item[aria-selected=true] .action-label::before { opacity: 1; }
+  .action-item[aria-selected=true] .active-item-indicator::before {
+    background-color: var(--accent) !important;
+    border-radius: 2px !important;
+    border-width: 0px !important;
+    bottom: 1px !important;
+    height: 3px !important;
+    left: 5px !important;
+    width: 15px !important;
+  }
+  
+}
+
+/*----------------------------------
+ * Title Bar Actions
+ * Hidden by default
+ *-------------------------------- */
+.titlebar .actions-container {
+  opacity:0;
+  transition:var(--transition);
+  &:hover { opacity:1; }
+}
+
+/*----------------------------------
+ * Pane Headers
+ *-------------------------------- */
+.monaco-pane-view .pane > .pane-header {
+  .twisty-container.codicon { opacity:0; }
+}
+
+/*----------------------------------
+ * Status Bar (footer)
+ *-------------------------------- */
+footer.statusbar {
+  > .items-container { opacity: 0.6; transition: var(--transition); }
+  &:hover > .items-container { opacity: 1; }
+}
