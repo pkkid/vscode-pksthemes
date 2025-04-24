@@ -107,7 +107,7 @@ div.title-label h2 { font-weight:bold !important; }
  *  .context-view.monaco-component.top.left - Some weird bubble that keeps popping up.
  *  .monaco-inputbox input::placeholder - Input placeholder text in the command palette.
  */
-.titlebar-center .actions-container { display: none !important; }
+.titlebar-center { display: none !important; }
 .context-view.monaco-component.top.left { display: none !important; }
 .monaco-inputbox input::placeholder { color: #fff1 !important; }
 /* Darken main window when command palette is open */
@@ -184,23 +184,24 @@ div.title-label h2 { font-weight:bold !important; }
     }
     &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
     &[aria-label^='Chat']::before { content: '\F171A' !important; }
+    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
     &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
     &[aria-label^='DBCode']::before { content: '\F1632' !important; }
     &[aria-label^='Debug']::before { content: '\F0A30' !important; }
     &[aria-label^='Explorer']::before { content: '\F1518' !important; }
     &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
+    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
     &[aria-label^='Output']::before { content: '\F1009' !important; }
     &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
     &[aria-label^='Problems']::before { content: '\F0CE4' !important; }
     &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
+    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
     &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
     &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
     &[aria-label^='Search']::before { content: '\F0349' !important; }
     &[aria-label^='Source Control']::before { content: '\F0169' !important; }
-    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
     &[aria-label^='Terminal']::before { content: '\F018D' !important; }
-    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
-    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
+    &[aria-label^="You're Not Alone"]::before { content: '\F0EDE' !important; }
   }
   .action-item[aria-selected=true] .action-label::before { opacity: 1; }
   .action-item[aria-selected=true] .active-item-indicator::before {
