@@ -159,7 +159,49 @@ div.title-label h2 { font-weight:bold !important; }
     padding: 0px 5px !important;
     &:hover .action-label::before { opacity: 1; }
   }
-  .action-label {
+  
+  .action-label[aria-label^='Bookmarks'],
+  .action-label[aria-label^='Chat'],
+  .action-label[aria-label^='Comments'],
+  .action-label[aria-label^='Copilot Edits'],
+  .action-label[aria-label^='DBCode'],
+  .action-label[aria-label^='Debug'],
+  .action-label[aria-label^='Explorer'],
+  .action-label[aria-label^='Extensions'],
+  .action-label[aria-label^='GitLens'],
+  .action-label[aria-label^='Output'],
+  .action-label[aria-label^='Ports'],
+  .action-label[aria-label^='Problems'],
+  .action-label[aria-label^='Project Manager'],
+  .action-label[aria-label^='Refactor Preview'],
+  .action-label[aria-label^='Remote Explorer'],
+  .action-label[aria-label^='Run and Debug'],
+  .action-label[aria-label^='Search'],
+  .action-label[aria-label^='Source Control'],
+  .action-label[aria-label^='Terminal'],
+  .action-label[aria-label^="You're Not Alone"] {
+    
+    &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
+    &[aria-label^='Chat']::before { content: '\F171A' !important; }
+    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
+    &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
+    &[aria-label^='DBCode']::before { content: '\F1632' !important; }
+    &[aria-label^='Debug']::before { content: '\F0A30' !important; }
+    &[aria-label^='Explorer']::before { content: '\F1518' !important; }
+    &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
+    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
+    &[aria-label^='Output']::before { content: '\F1009' !important; }
+    &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
+    &[aria-label^='Problems']::before { content: '\F0CE4' !important; }
+    &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
+    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
+    &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
+    &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
+    &[aria-label^='Search']::before { content: '\F0349' !important; }
+    &[aria-label^='Source Control']::before { content: '\F0169' !important; }
+    &[aria-label^='Terminal']::before { content: '\F018D' !important; }
+    &[aria-label^="You're Not Alone"]::before { content: '\F0EDE' !important; }
+
     mask-image: none !important;
     mask-mode: none !important;
     background-color: transparent !important;
@@ -182,38 +224,17 @@ div.title-label h2 { font-weight:bold !important; }
       top: 0px !important;
       transition: opacity 0.2s;
     }
-    &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
-    &[aria-label^='Chat']::before { content: '\F171A' !important; }
-    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
-    &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
-    &[aria-label^='DBCode']::before { content: '\F1632' !important; }
-    &[aria-label^='Debug']::before { content: '\F0A30' !important; }
-    &[aria-label^='Explorer']::before { content: '\F1518' !important; }
-    &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
-    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
-    &[aria-label^='Output']::before { content: '\F1009' !important; }
-    &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
-    &[aria-label^='Problems']::before { content: '\F0CE4' !important; }
-    &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
-    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
-    &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
-    &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
-    &[aria-label^='Search']::before { content: '\F0349' !important; }
-    &[aria-label^='Source Control']::before { content: '\F0169' !important; }
-    &[aria-label^='Terminal']::before { content: '\F018D' !important; }
-    &[aria-label^="You're Not Alone"]::before { content: '\F0EDE' !important; }
   }
-  .action-item[aria-selected=true] .action-label::before { opacity: 1; }
-  .action-item[aria-selected=true] .active-item-indicator::before {
-    background-color: var(--accent) !important;
-    border-radius: 2px !important;
-    border-width: 0px !important;
-    bottom: 1px !important;
-    height: 3px !important;
-    left: 5px !important;
-    width: 15px !important;
-  }
-  
+}
+.composite.header .action-item[aria-selected=true] .action-label::before { opacity: 1; }
+.composite.header .action-item[aria-selected=true] .active-item-indicator::before {
+  background-color: var(--accent) !important;
+  border-radius: 2px !important;
+  border-width: 0px !important;
+  bottom: 1px !important;
+  height: 3px !important;
+  left: 5px !important;
+  width: 15px !important;
 }
 
 /*----------------------------------
