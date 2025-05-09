@@ -151,6 +151,75 @@ div.title-label h2 { font-weight:bold !important; }
 /*----------------------------------
  * Composite Header Custom Icons
  *-------------------------------- */
+/* Icon Selection */
+.composite.header .action-label[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
+.composite.header .action-label[aria-label^='Chat']::before { content: '\F171A' !important; }
+.composite.header .action-label[aria-label^='Comments']::before { content: '\F0A04' !important; }
+.composite.header .action-label[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
+.composite.header .action-label[aria-label^='DBCode']::before { content: '\F1632' !important; }
+.composite.header .action-label[aria-label^='Debug']::before { content: '\F0A30' !important; }
+.composite.header .action-label[aria-label^='Explorer']::before { content: '\F1518' !important; }
+.composite.header .action-label[aria-label^='Extensions']::before { content: '\F01A7' !important; }
+.composite.header .action-label[aria-label^='GitLens']::before { content: '\F0169' !important; }
+.composite.header .action-label[aria-label^='Output']::before { content: '\F1009' !important; }
+.composite.header .action-label[aria-label^='Ports']::before { content: '\F0C9D' !important; }
+.composite.header .action-label[aria-label^='Problems']::before { content: '\F0CE4' !important; }
+.composite.header .action-label[aria-label^='Project Manager']::before { content: '\F0255' !important; }
+.composite.header .action-label[aria-label^='Python']::before { content: '\F0320' !important; }
+.composite.header .action-label[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
+.composite.header .action-label[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
+.composite.header .action-label[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
+.composite.header .action-label[aria-label^='Search']::before { content: '\F0349' !important; }
+.composite.header .action-label[aria-label^='Source Control']::before { content: '\F0169' !important; }
+.composite.header .action-label[aria-label^='Terminal']::before { content: '\F018D' !important; }
+.composite.header .action-label[aria-label^="You're Not Alone"]::before { content: '\F0EDE' !important; }
+
+/* Style for Custom Icons */
+.composite.header .action-label[aria-label^='Bookmarks'],
+.composite.header .action-label[aria-label^='Chat'],
+.composite.header .action-label[aria-label^='Comments'],
+.composite.header .action-label[aria-label^='Copilot Edits'],
+.composite.header .action-label[aria-label^='DBCode'],
+.composite.header .action-label[aria-label^='Debug'],
+.composite.header .action-label[aria-label^='Explorer'],
+.composite.header .action-label[aria-label^='Extensions'],
+.composite.header .action-label[aria-label^='GitLens'],
+.composite.header .action-label[aria-label^='Output'],
+.composite.header .action-label[aria-label^='Ports'],
+.composite.header .action-label[aria-label^='Problems'],
+.composite.header .action-label[aria-label^='Project Manager'],
+.composite.header .action-label[aria-label^='Python'],
+.composite.header .action-label[aria-label^='Refactor Preview'],
+.composite.header .action-label[aria-label^='Remote Explorer'],
+.composite.header .action-label[aria-label^='Run and Debug'],
+.composite.header .action-label[aria-label^='Search'],
+.composite.header .action-label[aria-label^='Source Control'],
+.composite.header .action-label[aria-label^='Terminal'],
+.composite.header .action-label[aria-label^="You're Not Alone"] {
+  mask-image: none !important;
+  mask-mode: none !important;
+  background-color: transparent !important;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+    color: var(--accent) !important;
+    display: block;
+    font: normal normal normal 18px/1 'Material Design Icons' !important;
+    left: 0px !important;
+    line-height: 18px;
+    margin: 0px;
+    opacity: 0.5;
+    position: absolute;
+    text-rendering: auto;
+    top: 0px !important;
+    transition: opacity 0.2s;
+  }
+}
+
+/* Style for All Icons */
 .composite.header {
   .action-item {
     display: flex;
@@ -159,83 +228,18 @@ div.title-label h2 { font-weight:bold !important; }
     padding: 0px 5px !important;
     &:hover .action-label::before { opacity: 1; }
   }
-  
-  .action-label[aria-label^='Bookmarks'],
-  .action-label[aria-label^='Chat'],
-  .action-label[aria-label^='Comments'],
-  .action-label[aria-label^='Copilot Edits'],
-  .action-label[aria-label^='DBCode'],
-  .action-label[aria-label^='Debug'],
-  .action-label[aria-label^='Explorer'],
-  .action-label[aria-label^='Extensions'],
-  .action-label[aria-label^='GitLens'],
-  .action-label[aria-label^='Output'],
-  .action-label[aria-label^='Ports'],
-  .action-label[aria-label^='Problems'],
-  .action-label[aria-label^='Project Manager'],
-  .action-label[aria-label^='Refactor Preview'],
-  .action-label[aria-label^='Remote Explorer'],
-  .action-label[aria-label^='Run and Debug'],
-  .action-label[aria-label^='Search'],
-  .action-label[aria-label^='Source Control'],
-  .action-label[aria-label^='Terminal'],
-  .action-label[aria-label^="You're Not Alone"] {
-    
-    &[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
-    &[aria-label^='Chat']::before { content: '\F171A' !important; }
-    &[aria-label^='Comments']::before { content: '\F0A04' !important; }
-    &[aria-label^='Copilot Edits']::before { content: '\F0DC9' !important; }
-    &[aria-label^='DBCode']::before { content: '\F1632' !important; }
-    &[aria-label^='Debug']::before { content: '\F0A30' !important; }
-    &[aria-label^='Explorer']::before { content: '\F1518' !important; }
-    &[aria-label^='Extensions']::before { content: '\F01A7' !important; }
-    &[aria-label^='GitLens']::before { content: '\F0169' !important; }
-    &[aria-label^='Output']::before { content: '\F1009' !important; }
-    &[aria-label^='Ports']::before { content: '\F0C9D' !important; }
-    &[aria-label^='Problems']::before { content: '\F0CE4' !important; }
-    &[aria-label^='Project Manager']::before { content: '\F0255' !important; }
-    &[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
-    &[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
-    &[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
-    &[aria-label^='Search']::before { content: '\F0349' !important; }
-    &[aria-label^='Source Control']::before { content: '\F0169' !important; }
-    &[aria-label^='Terminal']::before { content: '\F018D' !important; }
-    &[aria-label^="You're Not Alone"]::before { content: '\F0EDE' !important; }
-
-    mask-image: none !important;
-    mask-mode: none !important;
-    background-color: transparent !important;
-    margin-right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    &::before {
-      color: var(--accent) !important;
-      content: '\F024B' !important;
-      display: block;
-      font: normal normal normal 18px/1 'Material Design Icons' !important;
-      left: 0px !important;
-      line-height: 18px;
-      margin: 0px;
-      opacity: 0.5;
-      position: absolute;
-      text-rendering: auto;
-      top: 0px !important;
-      transition: opacity 0.2s;
-    }
+  .action-item[aria-selected=true] .action-label::before { opacity: 1; }
+  .action-item[aria-selected=true] .active-item-indicator::before {
+    background-color: var(--accent) !important;
+    border-radius: 2px !important;
+    border-width: 0px !important;
+    bottom: 1px !important;
+    height: 3px !important;
+    left: 5px !important;
+    width: 15px !important;
   }
 }
-.composite.header .action-item[aria-selected=true] .action-label::before { opacity: 1; }
-.composite.header .action-item[aria-selected=true] .active-item-indicator::before {
-  background-color: var(--accent) !important;
-  border-radius: 2px !important;
-  border-width: 0px !important;
-  bottom: 1px !important;
-  height: 3px !important;
-  left: 5px !important;
-  width: 15px !important;
-}
+
 
 /*----------------------------------
  * Title Bar Actions
@@ -260,4 +264,16 @@ div.title-label h2 { font-weight:bold !important; }
 footer.statusbar {
   > .items-container { opacity: 0.6; transition: var(--transition); }
   &:hover > .items-container { opacity: 1; }
+}
+
+/*----------------------------------
+ * Color Picker Decoration
+ *-------------------------------- */
+.colorpicker-color-decoration {
+  border: 1px solid #fff1 !important;
+  border-radius: 2px;
+  position: relative;
+  top: -2px;
+  height: 11px !important;
+  width: 11px !important;
 }
