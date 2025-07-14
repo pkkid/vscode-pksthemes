@@ -43,23 +43,6 @@
 }
 
 /*----------------------------------
- * Cleaner Copilot UI
- *-------------------------------- */
-.interactive-session .view-lines {
-  font-size: 12px !important;
-}
-.interactive-request {
-  background-color: #fff1;
-  font-size: 1.1em;
-  margin: 0px 10px;
-  border-radius: 6px;
-  .header { display: none; }
-}
-.interactive-response {
-  .header { display: none; }
-}
-
-/*----------------------------------
  * My Personal Projects
  * Update application icon for my personal projects
  *-------------------------------- */
@@ -279,4 +262,22 @@ footer.statusbar {
   top: -2px;
   height: 11px !important;
   width: 11px !important;
+}
+
+/*----------------------------------
+ * Cleaner Copilot UI
+ *-------------------------------- */
+.interactive-session .view-lines {
+  font-size: 12px !important;
+}
+.interactive-request {
+  background-color: #fff1;
+  font-size: 1.1em;
+  margin: 0px 10px;
+  border-radius: 6px;
+  .header { display: none; }
+  .rendered-markdown { background-color:#0003 !important; }
+}
+.interactive-response {
+  .header { display: none; }
 }
