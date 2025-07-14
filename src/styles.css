@@ -17,7 +17,10 @@
   --titlecolor: transparent;
   --accent: #90846b;
 }
-.linux { font-family:"Liberation Sans" !important; font-weight:400; }
+.linux {
+  font-family: "Liberation Sans" !important;
+  font-weight: 450;
+}
 
 /*----------------------------------
  * Big Letterbox Logo
