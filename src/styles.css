@@ -94,7 +94,7 @@ div.title-label h2 { font-weight:bold !important; }
  *  .monaco-inputbox input::placeholder - Input placeholder text in the command palette.
  */
 .titlebar-center { display: none !important; }
-.context-view.monaco-component.top.left { display: none !important; }
+/* .context-view.monaco-component.top.left { display: none !important; } */
 .monaco-inputbox input::placeholder { color: #fff1 !important; }
 /* Darken main window when command palette is open */
 .monaco-grid-view { transition: filter 0.2s; }  
