@@ -17,7 +17,10 @@
   --titlecolor: transparent;
   --accent: #90846b;
 }
-.linux { font-family:"Liberation Sans" !important; font-weight:400; }
+.linux {
+  font-family: "Liberation Sans" !important;
+  font-weight: 450;
+}
 
 /*----------------------------------
  * Big Letterbox Logo
@@ -37,23 +40,6 @@
     top:0px; left:0px;
     width:100%; height:100%;
   }
-}
-
-/*----------------------------------
- * Cleaner Copilot UI
- *-------------------------------- */
-.interactive-session .view-lines {
-  font-size: 12px !important;
-}
-.interactive-request {
-  background-color: #fff1;
-  font-size: 1.1em;
-  margin: 0px 10px;
-  border-radius: 6px;
-  .header { display: none; }
-}
-.interactive-response {
-  .header { display: none; }
 }
 
 /*----------------------------------
@@ -108,7 +94,7 @@ div.title-label h2 { font-weight:bold !important; }
  *  .monaco-inputbox input::placeholder - Input placeholder text in the command palette.
  */
 .titlebar-center { display: none !important; }
-.context-view.monaco-component.top.left { display: none !important; }
+/* .context-view.monaco-component.top.left { display: none !important; } */
 .monaco-inputbox input::placeholder { color: #fff1 !important; }
 /* Darken main window when command palette is open */
 .monaco-grid-view { transition: filter 0.2s; }  
@@ -276,4 +262,22 @@ footer.statusbar {
   top: -1px;
   height: 9px !important;
   width: 9px !important;
+}
+
+/*----------------------------------
+ * Cleaner Copilot UI
+ *-------------------------------- */
+.interactive-session .view-lines {
+  font-size: 12px !important;
+}
+.interactive-request {
+  background-color: #fff1;
+  font-size: 1.1em;
+  margin: 0px 10px;
+  border-radius: 6px;
+  .header { display: none; }
+  .rendered-markdown { background-color:#0003 !important; }
+}
+.interactive-response {
+  .header { display: none; }
 }
