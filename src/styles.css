@@ -168,11 +168,11 @@ div.title-label h2 { font-weight:bold !important; }
 .composite.header .action-label[aria-label^='Python']::before { content: '\F0320' !important; }
 .composite.header .action-label[aria-label^='Refactor Preview']::before { content: '\F1C83' !important; }
 .composite.header .action-label[aria-label^='Remote Explorer']::before { content: '\F08B9' !important; }
+.composite.header .action-label[aria-label^='Roo Code']::before { content: '\F1558' !important; }
 .composite.header .action-label[aria-label^='Run and Debug']::before { content: '\F1AF8' !important; }
 .composite.header .action-label[aria-label^='Search']::before { content: '\F0349' !important; }
 .composite.header .action-label[aria-label^='Source Control']::before { content: '\F0169' !important; }
 .composite.header .action-label[aria-label^='Terminal']::before { content: '\F018D' !important; }
-.composite.header .action-label[aria-label^="You're Not Alone"]::before { content: '\F0EDE' !important; }
 
 /* Style for Custom Icons */
 .composite.header .action-label[aria-label^='Bookmarks'],
@@ -192,10 +192,10 @@ div.title-label h2 { font-weight:bold !important; }
 .composite.header .action-label[aria-label^='Refactor Preview'],
 .composite.header .action-label[aria-label^='Remote Explorer'],
 .composite.header .action-label[aria-label^='Run and Debug'],
+.composite.header .action-label[aria-label^='Roo Code'],
 .composite.header .action-label[aria-label^='Search'],
 .composite.header .action-label[aria-label^='Source Control'],
-.composite.header .action-label[aria-label^='Terminal'],
-.composite.header .action-label[aria-label^="You're Not Alone"] {
+.composite.header .action-label[aria-label^='Terminal'] {
   mask-image: none !important;
   mask-mode: none !important;
   background-color: transparent !important;
@@ -273,7 +273,7 @@ footer.statusbar {
   border: 1px solid #fff1 !important;
   border-radius: 2px;
   position: relative;
-  top: -2px;
-  height: 11px !important;
-  width: 11px !important;
+  top: -1px;
+  height: 9px !important;
+  width: 9px !important;
 }
