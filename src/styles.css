@@ -64,6 +64,7 @@ div.title-label h2 { font-weight:bold !important; }
 .codicon.codicon-breadcrumb-separator { color:#333 !important; }
 .codicon.codicon-remote { color:#ebdbb2 !important; }
 
+
 /*----------------------------------
  * Quick Command Palette
  *-------------------------------- */
@@ -182,6 +183,7 @@ div.title-label h2 { font-weight:bold !important; }
 .composite.header .action-label[aria-label^='Search'],
 .composite.header .action-label[aria-label^='Source Control'],
 .composite.header .action-label[aria-label^='Terminal'] {
+  --vscode-activityBarTop-foreground: transparent !important;
   mask-image: none !important;
   mask-mode: none !important;
   background-color: transparent !important;
