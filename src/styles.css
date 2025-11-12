@@ -269,17 +269,15 @@ footer.statusbar {
 /*----------------------------------
  * Cleaner Copilot UI
  *-------------------------------- */
-.interactive-session .view-lines {
-  font-size: 12px !important;
+.interactive-item-container.interactive-request .value .rendered-markdown {
+  background-color: #141413aa !important;
+  color: #ddc !important;
+  font-family: Inter !important;
 }
-.interactive-request {
-  background-color: #fff1;
+.interactive-item-container .value .rendered-markdown {
+  font-family: Domine !important;
   font-size: 1.1em;
-  margin: 0px 10px;
-  border-radius: 6px;
-  .header { display: none; }
-  .rendered-markdown { background-color:#0003 !important; }
 }
-.interactive-response {
-  .header { display: none; }
+.checkpoint-container {
+  opacity: 0.4;
 }

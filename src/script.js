@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
   link.rel = 'stylesheet'
   link.href = 'https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css'
   document.head.appendChild(link)
+
+  // Inject the Material Design Icons
+  var link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.href = 'https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
+  document.head.appendChild(link)
   
   setInterval(function() {
     // Update the Window Title and icon
