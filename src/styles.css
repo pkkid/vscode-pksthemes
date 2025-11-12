@@ -273,10 +273,14 @@ footer.statusbar {
   background-color: #141413aa !important;
   color: #ddc !important;
   font-family: Inter !important;
+  letter-spacing: 0.2px;
 }
 .interactive-item-container .value .rendered-markdown {
   font-family: Domine !important;
   font-size: 1.1em;
+}
+.interactive-result-code-block .view-lines.monaco-mouse-cursor-text > div {
+  font-size: 12px !important;
 }
 .checkpoint-container {
   opacity: 0.4;
