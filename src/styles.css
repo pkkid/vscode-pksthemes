@@ -278,6 +278,7 @@ footer.statusbar {
 .interactive-item-container .value .rendered-markdown {
   font-family: Domine !important;
   font-size: 1.1em;
+  h2 { color: #ccb; }
 }
 .interactive-result-code-block .view-lines.monaco-mouse-cursor-text > div {
   font-size: 12px !important;
