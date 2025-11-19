@@ -88,6 +88,10 @@ div.title-label h2 { font-weight:bold !important; }
   font-size: 18px;
   padding-bottom: 10px;
 }
+/* Terminal */
+.xterm-screen canvas {
+  border-radius: 8px !important;
+}
 /* 
  * Actions Container
  *  .titlebar-center .actions-container - Big actions button in the VSCode header.
@@ -139,6 +143,7 @@ div.title-label h2 { font-weight:bold !important; }
  * Composite Header Custom Icons
  *-------------------------------- */
 /* Icon Selection */
+.composite.header .action-label[aria-label^='Agent Sessions']::before { content: '\F02DA' !important; }
 .composite.header .action-label[aria-label^='Bookmarks']::before { content: '\F0E16' !important; }
 .composite.header .action-label[aria-label^='Chat']::before { content: '\F171A' !important; }
 .composite.header .action-label[aria-label^='Comments']::before { content: '\F0A04' !important; }
@@ -162,6 +167,7 @@ div.title-label h2 { font-weight:bold !important; }
 .composite.header .action-label[aria-label^='Terminal']::before { content: '\F018D' !important; }
 
 /* Style for Custom Icons */
+.composite.header .action-label[aria-label^='Agent Sessions'],
 .composite.header .action-label[aria-label^='Bookmarks'],
 .composite.header .action-label[aria-label^='Chat'],
 .composite.header .action-label[aria-label^='Comments'],
@@ -275,12 +281,13 @@ footer.statusbar {
 .interactive-item-container.interactive-request .value .rendered-markdown {
   background-color: #141413aa !important;
   color: #ddc !important;
-  font-family: Inter !important;
+  font-family: "Anthropic Sans" !important;
   letter-spacing: 0.2px;
 }
 .interactive-item-container .value .rendered-markdown {
-  font-family: Domine !important;
+  font-family: "Anthropic Serif" !important;
   font-size: 1.1em;
+  /* color: #bba; */
   h2,h3,h4 { color: #ccb; }
 }
 .interactive-result-code-block .view-lines.monaco-mouse-cursor-text > div {
