@@ -5,31 +5,47 @@
   "version": "2025.1.5",
   "publisher": "pkkid",
   "repository": "https://github.com/pkkid/vscode-pkstheme",
-  "engines": {"vscode": "^1.11.0"},
-  "categories": ["Themes"],
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "categories": [
+    "Themes"
+  ],
   "icon": "img/icon.png",
-  "dependencies": {"json5": "^2.2.3"},
+  "dependencies": {
+    "json5": "^2.2.3"
+  },
   "contributes": {
-    "themes": [{
-      "label": "PKsTheme RIT",
-      "path": "./themes/theme-rit.json",
-      "uiTheme": "vs-dark"
-    },{
-      "label": "PKsTheme Dracula",
-      "path": "./themes/theme-dracula.json",
-      "uiTheme": "vs-dark"
-    },{
-      "label": "PKsTheme Gruvbox",
-      "path": "./themes/theme-gruvbox.json",
-      "uiTheme": "vs-dark"
-    },{
-      "label": "PKsTheme Monokai",
-      "path": "./themes/theme-monokai.json",
-      "uiTheme": "vs-dark"
-    },{
-      "label": "PKsTheme OneDark Pro",
-      "path": "./themes/theme-onedarkpro.json",
-      "uiTheme": "vs-dark"
-    }]
+    "themes": [
+      {
+        "label": "PKsTheme RIT",
+        "path": "./themes/theme-rit.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "PKsTheme Dracula",
+        "path": "./themes/theme-dracula.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "PKsTheme Gruvbox",
+        "path": "./themes/theme-gruvbox.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "PKsTheme Monokai",
+        "path": "./themes/theme-monokai.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "PKsTheme OneDark Pro",
+        "path": "./themes/theme-onedarkpro.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.0",
+    "ovsx": "^0.10.6"
   }
 }
