@@ -4,6 +4,7 @@
   "description": "PKsThemes for VSCode",
   "version": "2025.11.19",
   "publisher": "pkkid",
+  "license": "MIT",
   "repository": "https://github.com/pkkid/vscode-pkstheme",
   "engines": {
     "vscode": "^1.11.0"
