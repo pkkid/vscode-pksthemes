@@ -1,7 +1,12 @@
 .vscode/**
+.claude/**
 examples/**
 images/**
 
 !images/icon.png
 .gitignore
 CHANGELOG.md
+build.js
+install.sh
+.DS_Store
+*.vsix
