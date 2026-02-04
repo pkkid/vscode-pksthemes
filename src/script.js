@@ -5,8 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Project Icons
   // https://icon-sets.iconify.design/mdi/
-  var DEFAULT_ICON = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23000' d='M32.59 41.758a2.41 2.41 0 0 1-2.77-.474L14.448 27.188l-6.695 5.109a1.62 1.62 0 0 1-2.074-.093l-2.147-1.963a1.64 1.64 0 0 1-.002-2.416L9.336 22.5L3.53 17.175a1.64 1.64 0 0 1 .002-2.416l2.147-1.963a1.62 1.62 0 0 1 2.074-.093l6.695 5.109L29.82 3.716a2.42 2.42 0 0 1 2.77-.475l8.03 3.884A2.45 2.45 0 0 1 42 9.333V24h-9.744V13.601L20.593 22.5l11.663 8.899V24H42v11.667c0 .941-.537 1.8-1.38 2.208z'/%3E%3C/svg%3E")`
-  var icons = {
+  var RESOURCES = [
+    'https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+  ]
+  var PROJECT_ICONS = {
+    '_DEFAULT': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23000' d='M32.59 41.758a2.41 2.41 0 0 1-2.77-.474L14.448 27.188l-6.695 5.109a1.62 1.62 0 0 1-2.074-.093l-2.147-1.963a1.64 1.64 0 0 1-.002-2.416L9.336 22.5L3.53 17.175a1.64 1.64 0 0 1 .002-2.416l2.147-1.963a1.62 1.62 0 0 1 2.074-.093l6.695 5.109L29.82 3.716a2.42 2.42 0 0 1 2.77-.475l8.03 3.884A2.45 2.45 0 0 1 42 9.333V24h-9.744V13.601L20.593 22.5l11.663 8.899V24H42v11.667c0 .941-.537 1.8-1.38 2.208z'/%3E%3C/svg%3E")`,
     'api-portal': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2a2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2a2 2 0 0 1-2-2V5h-2V3z'/%3E%3C/svg%3E")`,
     'conky-pkmeter': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21 16V4H3v12zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7v2h2v2H8v-2h2v-2H3a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2zM5 6h9v5H5zm10 0h4v2h-4zm4 3v5h-4V9zM5 12h4v2H5zm5 0h4v2h-4z'/%3E%3C/svg%3E")`,
     'django-searchquery': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11 18.95c-3.23-.23-5-1.5-5-1.95v-2.23c1.13.55 2.5.92 4 1.1c0-.66.04-1.33.21-1.98c-1.71-.22-3.24-.73-4.21-1.44V9.64c1.43.81 3.5 1.33 5.82 1.36c.03-.03.05-.07.08-.1c2.2-2.19 5.6-2.49 8.1-.87V7c0-2.21-3.58-4-8-4S4 4.79 4 7v10c0 2.21 3.59 4 8 4c.34 0 .68 0 1-.03c-.38-.25-.76-.53-1.1-.87c-.35-.36-.65-.74-.9-1.15M12 5c3.87 0 6 1.5 6 2s-2.13 2-6 2s-6-1.5-6-2s2.13-2 6-2m8.31 12.9c.44-.69.69-1.52.69-2.4c0-2.5-2-4.5-4.5-4.5S12 13 12 15.5s2 4.5 4.5 4.5c.87 0 1.69-.25 2.38-.68L22 22.39L23.39 21zm-3.81.1a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5'/%3E%3C/svg%3E")`,
@@ -22,15 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
     'vscode-pkstheme': `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m2.5 19.6l1.3.6v-9L1.4 17c-.4 1.1.1 2.2 1.1 2.6M15.2 4.8l5 12l-7.3 3l-5-11.9v-.1zm.1-2c-.3 0-.5 0-.8.1L7.1 6c-.7.3-1.2 1-1.2 1.8c0 .2 0 .5.1.8l5 11.9c.3.8 1 1.2 1.8 1.2c.3 0 .5 0 .8-.1l7.4-3.1c1-.4 1.5-1.6 1.1-2.6L17.1 4c-.3-.8-1.1-1.2-1.8-1.2m-4.8 7.1c-.6 0-1-.4-1-1s.4-1 1-1s1 .5 1 1s-.4 1-1 1m-4.6 9.9c0 1.1.9 2 2 2h1.4l-3.4-8.3z'/%3E%3C/svg%3E")`,
   }
 
-  // Inject the Material Design Icons
-  var resources = [
-    // 'https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css',
-    'https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
-  ]
-  for (var i = 0; i < resources.length; i++) {
+  // Inject Resources
+  for (var i = 0; i < RESOURCES.length; i++) {
     var link = document.createElement('link')
     link.rel = 'stylesheet'
-    link.href = resources[i]
+    link.href = RESOURCES[i]
     document.head.appendChild(link)
   }
   
@@ -46,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
         appicon.parentNode.insertBefore(titlediv, appicon.nextSibling)
       }
       // Update the icon
-      var icon = DEFAULT_ICON
-      for (var key in icons) {
-        if (newtitle.startsWith(key)) { icon = icons[key]; break }
+      var icon = PROJECT_ICONS['_DEFAULT'];
+      for (var key in PROJECT_ICONS) {
+        if (newtitle.startsWith(key)) { icon = PROJECT_ICONS[key]; break }
       }
       appicon.style.setProperty('align-items', 'center')
       appicon.style.setProperty('background-color', 'var(--accent)')
