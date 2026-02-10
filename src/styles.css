@@ -258,17 +258,14 @@ footer.statusbar {
 .interactive-session {
   max-width: 100% !important;
 }
-.interactive-item-container.interactive-request .value .rendered-markdown {
+.interactive-item-container.interactive-request .value .rendered-markdown,
+div[class^="userMessage_"] {
   background-color: #141413aa !important;
   color: #ddc !important;
   font-family: "Anthropic Sans" !important;
   letter-spacing: 0.2px;
-}
-.interactive-item-container .value .rendered-markdown {
-  font-family: "Anthropic Serif" !important;
-  font-size: 1.1em;
-  /* color: #bba; */
-  h2,h3,h4 { color: #ccb; }
+  border-width: 0px !important;
+  padding: 8px 12px !important;
 }
 .interactive-result-code-block .view-lines.monaco-mouse-cursor-text > div {
   font-size: 12px !important;
