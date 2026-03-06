@@ -13,6 +13,7 @@
     "button.hoverBackground": "#45858860",
     "dropdown.foreground": "#ebdbb2",
     "dropdown.background": "#444",
+    "gitDecoration.ignoredResourceForeground": "#ebdbb250",
     "input.foreground": "#ebdbb2",
     "input.placeholderForeground": "#ebdbb260",
     "keybindingLabel.background": "#444",
