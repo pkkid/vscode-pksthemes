@@ -193,6 +193,12 @@ div.title-label h2 { font-weight:bold !important; }
   }
 }
 
+/* Chat Input Toolbar */
+.chat-input-toolbar * {
+  color: var(--accent) !important;
+  &:before { color: var(--accent) !important; }
+}
+
 /* Style for All Icons */
 .composite.header {
   .action-item {
