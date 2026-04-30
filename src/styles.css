@@ -198,6 +198,9 @@ div.title-label h2 { font-weight:bold !important; }
   color: var(--accent) !important;
   &:before { color: var(--accent) !important; }
 }
+.interactive-session .chat-secondary-toolbar .chat-input-picker-item .action-label {
+  color: var(--accent);
+}
 
 /* Style for All Icons */
 .composite.header {
