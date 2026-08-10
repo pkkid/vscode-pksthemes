@@ -7,6 +7,7 @@
       "settings": {"foreground": "#cc241d"},
       "scope": [
         "beginning.punctuation.definition.list.markdown",
+        "constant",
         "constant.other.caps.python",
         "meta.function-call.js",
         "meta.function.expression.js",
@@ -65,6 +66,7 @@
         "python punctuation.definition.list",
         "source.python punctuation.definition.arguments",
         "source.python punctuation.definition.dictionary",
+        "punctuation.section.brackets",
       ],
     },{
       "name": "Peach",
@@ -116,7 +118,6 @@
       "scope": [
         "constant.character.entity",
         "constant.numeric",
-        "constant",
         "source.css constant.numeric",
         "source.css constant",
         "source.css keyword",

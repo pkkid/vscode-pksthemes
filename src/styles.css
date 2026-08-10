@@ -16,31 +16,13 @@
   --transition: opacity 0.3s !important;
   --titlecolor: transparent;
   --accent: #90846b;
+  --vscode-icon-foreground: var(--accent) !important;
 }
 .linux {
   font-family: "Liberation Sans" !important;
   font-weight: 450;
 }
 
-/*----------------------------------
- * Big Letterbox Logo
- *-------------------------------- */
-.letterpress {
-  background-image: none !important;
-  position: relative;
-  &::before {
-    align-items: center;
-    color: #0005 !important;
-    content: '\F1719' !important;
-    display: flex;
-    font-family: 'Material Design Icons';
-    font-size: 400px;
-    justify-content: center;
-    position: absolute;
-    top:0px; left:0px;
-    width:100%; height:100%;
-  }
-}
 
 /*----------------------------------
  * Font and Color Tweaks
@@ -76,10 +58,7 @@ div.title-label h2 { font-weight:bold !important; }
   font-size: 18px;
   padding-bottom: 10px;
 }
-/* Terminal */
-.xterm-screen canvas {
-  border-radius: 8px !important;
-}
+
 /* 
  * Actions Container
  *  .titlebar-center .actions-container - Big actions button in the VSCode header.
@@ -87,7 +66,7 @@ div.title-label h2 { font-weight:bold !important; }
  *  .monaco-inputbox input::placeholder - Input placeholder text in the command palette.
  */
 .titlebar-center { display: none !important; }
-/* .context-view.monaco-component.top.left { display: none !important; } */
+.center-adjacent-toolbar-container { display: none !important; }
 .monaco-inputbox input::placeholder { color: #fff1 !important; }
 /* Darken main window when command palette is open */
 .monaco-grid-view { transition: filter 0.2s; }  
@@ -95,21 +74,6 @@ div.title-label h2 { font-weight:bold !important; }
   .monaco-grid-view { filter: brightness(75%) !important; }
 }
 
-/*----------------------------------
- * File Tabs
- *-------------------------------- */
-.sidebar.left { border-right: 1px solid #0000 !important; }
-.basepanel.right { border-left: 1px solid #0000 !important; }
-.tabs-and-actions-container .tabs-container > .tab {
-  border-top-left-radius: 8px !important;
-  border-top-right-radius: 8px !important;
-}
-
-/*----------------------------------
- * Editor (rounded corners)
- *-------------------------------- */
-.monaco-breadcrumbs { border-top-right-radius: 8px; }
-.editor .content { border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
 
 /*----------------------------------
  * Scrollbar
@@ -169,6 +133,7 @@ div.title-label h2 { font-weight:bold !important; }
   /* Remove all base styles */
   /* We'll use the before pseudo-element for the icon */
   --vscode-activityBarTop-foreground: transparent !important;
+  --vscode-descriptionForeground: transparent !important;;
   mask-image: none !important;
   mask-mode: none !important;
   background-color: transparent !important;
@@ -177,29 +142,24 @@ div.title-label h2 { font-weight:bold !important; }
   justify-content: center;
   align-items: center;
   position: relative;
+  top: 0px !important;
+  left: 0px !important;
+  width: 16px !important;
+  height: 16px !important;
   &::before {
     content: " " !important;
     mask-repeat: no-repeat !important;
     mask-position: center !important;
     background-color: var(--accent) !important;
-    width: 19px;
-    height: 19px;
     position: absolute;
+    width: 16px;
+    height: 16px;
     top: 0px !important;
     left: 0px !important;
     opacity: 0.6;
     transition: opacity 0.2s;
     &:hover { opacity: 1; }
   }
-}
-
-/* Chat Input Toolbar */
-.chat-input-toolbar * {
-  color: var(--accent) !important;
-  &:before { color: var(--accent) !important; }
-}
-.interactive-session .chat-secondary-toolbar .chat-input-picker-item .action-label {
-  color: var(--accent);
 }
 
 /* Style for All Icons */
@@ -265,23 +225,6 @@ footer.statusbar {
  * Cleaner Copilot UI
  *-------------------------------- */
 .interactive-session {
+  --vscode-icon-foreground: var(--accent) !important;
   max-width: 100% !important;
-}
-.interactive-item-container.interactive-request .value .rendered-markdown {
-  background-color: #141413aa !important;
-  color: #ddc !important;
-  font-family: "Anthropic Sans" !important;
-  letter-spacing: 0.2px;
-  border-width: 0px !important;
-  padding: 8px 12px !important;
-}
-div[class^="userMessage_"],
-span.chat-input-picker-label {
-  color: var(--accent) !important;
-}
-.interactive-result-code-block .view-lines.monaco-mouse-cursor-text > div {
-  font-size: 12px !important;
-}
-.checkpoint-container {
-  opacity: 0.4;
 }
