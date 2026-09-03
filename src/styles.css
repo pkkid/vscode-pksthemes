@@ -164,6 +164,7 @@ div.title-label h2 { font-weight:bold !important; }
 
 /* Style for All Icons */
 .composite.header {
+  --vscode-modernTab-activeForeground: transparent;
   .action-item {
     display: flex;
     justify-content: center;
@@ -181,6 +182,11 @@ div.title-label h2 { font-weight:bold !important; }
     left: 5px !important;
     width: 15px !important;
   }
+}
+.modern-ui-tabs .pane-composite-part .composite-bar-container .composite-bar .monaco-action-bar .action-item .action-label.uri-icon,
+.modern-ui-tabs .pane-composite-part>:is(.title,.header-or-footer)>.composite-bar-container>.composite-bar>.monaco-action-bar .action-item.icon:not(.checked):not(:active):hover>.action-label.uri-icon {
+  --vscode-modernTab-activeForeground: transparent;
+  background-color: transparent !important;
 }
 
 
