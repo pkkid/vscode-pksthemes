@@ -195,9 +195,13 @@ div.title-label h2 { font-weight:bold !important; }
  * Hidden by default
  *-------------------------------- */
 .titlebar .actions-container {
-  opacity:0;
-  transition:var(--transition);
-  &:hover { opacity:1; }
+  li {
+    opacity:0;
+    transition:var(--transition);
+    &[aria-label^='Accounts'],
+    &[aria-label^='Manage'] { opacity:1; }
+  }
+  &:hover li { opacity:1; }
 }
 
 /*----------------------------------
