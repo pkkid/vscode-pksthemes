@@ -8,6 +8,9 @@
     "foreground": "#ebdbb2bb",
     "textLink.activeForeground": "#ebdbb2",
     "textLink.foreground": "#ebdbb2",
+    "icon.foreground": "#a79b7d",
+    "toolbar.foreground": "#a79b7d",
+    "descriptionForeground": "#a79b7d",
     // TITLE BAR
     "titleBar.activeBackground": "#252526",
     "titleBar.activeForeground": "#ebdbb2",
@@ -37,13 +40,22 @@
     // ACTIVITY BAR
     "activityBar.background": "#252526",
     "activityBar.foreground": "#ebdbb2",
+    "activityBar.inactiveForeground": "#a79b7d",
+    "activityBarTop.foreground": "#ebdbb2",
+    "activityBarTop.inactiveForeground": "#a79b7d",
     "activityBarBadge.background": "#458588",
     "activityBarBadge.foreground": "#ebdbb2",
     // SIDEBAR
     "sideBar.border": "#00000000",
     "sideBar.foreground": "#D6C8ABDD",
     "sideBarSectionHeader.background": "#333333",
+    "sideBarSectionHeader.foreground": "#a79b7d",
     "sideBarTitle.foreground": "#D6C8ABDD",
+    // GIT DECORATIONS
+    "gitDecoration.ignoredResourceForeground": "#ebdbb244",
+    // PANEL TITLES
+    "panelTitle.activeForeground": "#a79b7d",
+    "panelTitle.inactiveForeground": "#a79b7d",
     // TABS
     "tab.activeBackground": "#151516",
     "tab.activeForeground": "#ebdbb2",
