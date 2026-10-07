@@ -5,6 +5,10 @@ This was the old theme I was tough to code with at college in 2000. It's a high
 contrast theme primarily using reds with a mix of blues. I feel most would look
 in horror at this theme, but it's how my brain thinks.
 
+## Preview
+
+![PKsThemes preview](img/theme-preview.svg)
+
 ## Installation
 Install directly from the Visual Studio Code Marketplace:
 1. Open VSCode
@@ -40,4 +44,3 @@ To create a `.vsix` file without publishing: `npm run package`
 ## Credits
 Special thank to Pavel Pertsev, the creator of gruvbox original theme.
 Also thanks to jdinhify for the VSCode editor theme colors.
-
