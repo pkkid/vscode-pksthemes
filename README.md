@@ -21,7 +21,13 @@ code --install-extension pkkid.pksthemes
 To develop or customize this extension:
 1. Clone this repo to your machine
 2. Run `npm install` to install dependencies
-3. Make your changes to the theme files in the `themes/` directory
+3. Edit `src/window.json` for shared window colors (including the `#232526`
+   background), or `src/syntax-*.json` for variant-specific syntax colors
+4. Run `node build.js` to regenerate all theme files in `themes/`
+5. To update an installed copy, run `npm run package`, then
+   `code --install-extension pksthemes-<version>.vsix --force`
+   (replace `<version>` with the version in `package.json`)
+6. Run **Developer: Reload Window** in VSCode to load the updated theme
 
 
 ## Publishing
@@ -40,4 +46,3 @@ To create a `.vsix` file without publishing: `npm run package`
 ## Credits
 Special thank to Pavel Pertsev, the creator of gruvbox original theme.
 Also thanks to jdinhify for the VSCode editor theme colors.
-

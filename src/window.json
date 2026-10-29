@@ -11,8 +11,10 @@
     "icon.foreground": "#a79b7d",
     "toolbar.foreground": "#a79b7d",
     "descriptionForeground": "#a79b7d",
+    "surface.border": "#303233",
+    "modernPanel.border": "#303233",
     // TITLE BAR
-    "titleBar.activeBackground": "#252526",
+    "titleBar.activeBackground": "#232526",
     "titleBar.activeForeground": "#ebdbb2",
     // BUTTON, DROPDOWN, INPUT, PROGRESS BAR
     "button.background": "#45858880",
@@ -38,7 +40,7 @@
     "list.inactiveSelectionBackground": "#3c383680",
     "list.highlightForeground": "#ebdbb2ee",
     // ACTIVITY BAR
-    "activityBar.background": "#252526",
+    "activityBar.background": "#232526",
     "activityBar.foreground": "#ebdbb2",
     "activityBar.inactiveForeground": "#a79b7d",
     "activityBarTop.foreground": "#ebdbb2",
@@ -46,7 +48,8 @@
     "activityBarBadge.background": "#458588",
     "activityBarBadge.foreground": "#ebdbb2",
     // SIDEBAR
-    "sideBar.border": "#00000000",
+    "sideBar.background": "#232526",
+    "sideBar.border": "#303233",
     "sideBar.foreground": "#D6C8ABDD",
     "sideBarSectionHeader.background": "#333333",
     "sideBarSectionHeader.foreground": "#a79b7d",
@@ -54,13 +57,20 @@
     // GIT DECORATIONS
     "gitDecoration.ignoredResourceForeground": "#ebdbb244",
     // PANEL TITLES
+    "panel.background": "#232526",
+    "panel.border": "#303233",
     "panelTitle.activeForeground": "#a79b7d",
     "panelTitle.inactiveForeground": "#a79b7d",
     // TABS
     "tab.activeBackground": "#151516",
     "tab.activeForeground": "#ebdbb2",
-    "tab.inactiveBackground": "#252526",
+    "tab.inactiveBackground": "#232526",
     "tab.inactiveForeground": "#a89984",
+    "tab.border": "#232526",
+    "editorGroupHeader.tabsBackground": "#232526",
+    "editorWidget.background": "#232526",
+    "peekViewTitle.background": "#232526",
+    "peekViewResult.background": "#232526",
     // BREADCRUMB
     "breadcrumb.foreground": "#ebdbb244",
     "breadcrumb.focusForeground": "#ebdbb2aa",
@@ -98,7 +108,7 @@
     "diffEditorGutter.insertedLineBackground": "#0f02",
     "diffEditorGutter.removedLineBackground": "#f002",
     // STATUS BAR
-    "statusBar.background": "#252526",
+    "statusBar.background": "#232526",
     "statusBar.border": "#33333300",
     "statusBar.debuggingBackground": "#fe8019",
     "statusBar.debuggingBorder": "#1d202100",
@@ -107,7 +117,7 @@
     "statusBar.noFolderBackground": "#1d2021",
     "statusBar.noFolderBorder": "#1d202100",
     // TERMINAL
-    "terminal.background": "#252526",
+    "terminal.background": "#232526",
     "terminal.foreground": "#79ce50",
     "terminal.ansiBlack": "#3c3836",
     "terminal.ansiBrightBlack": "#928374",
