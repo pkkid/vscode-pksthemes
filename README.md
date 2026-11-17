@@ -7,7 +7,7 @@ in horror at this theme, but it's how my brain thinks.
 
 ## Preview
 
-![PKsThemes preview](img/theme-preview.svg)
+![PKsThemes preview](img/theme-preview.png)
 
 ## Installation
 Install directly from the Visual Studio Code Marketplace:
